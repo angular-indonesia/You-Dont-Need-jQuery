@@ -19,6 +19,7 @@ El desarrollo Frontend evoluciona día a día, y los navegadores modernos ya han
 ## Traducción
 
 * [한국어](./README.ko-KR.md)
+* [正體中文](./README.zh-TW.md)
 * [简体中文](./README.zh-CN.md)
 * [Bahasa Melayu](./README-my.md)
 * [Bahasa Indonesia](./README-id.md)
@@ -708,7 +709,7 @@ Para un reemplazo completo con namespace y delegación, utilizar https://github.
 
   // Nativo
   // Verifica que DOMContentLoaded ya se ha completado
-  if (document.readyState === 'complete' || document.readyState !== 'loading') {
+  if (document.readyState !== 'loading') {
     eventHandler();
   } else {
     document.addEventListener('DOMContentLoaded', eventHandler);
